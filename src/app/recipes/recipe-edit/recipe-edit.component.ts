@@ -19,7 +19,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.subscription = this.route.params.subscribe((params: Params) => {
-      t\his.id = +params['id'];
+      this.id = +params['id'];
       this.editMode = params['id'] != null;
     });
   }
